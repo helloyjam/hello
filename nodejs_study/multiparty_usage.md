@@ -45,6 +45,8 @@ python request_test.py 를 입력하면 다음과 같은 결과가 node_test.js�
 
 커맨드라인에 
 npm install multiparty을 입력해서 패키지를 설치한다.
+
+<pre><code>
 let multiparty = require('multiparty');
 
 router.post('/data', function(req, res, next)
@@ -73,6 +75,8 @@ router.post('/data', function(req, res, next)
     form.parse(req)
     res.send("complete...")
 }
+</code></pre>
+
 다시 request_test.py를 실행해보자.
 
 그러면, 
