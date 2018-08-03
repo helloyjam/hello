@@ -25,8 +25,7 @@ total_available_size를 GB로 변환하면 1.39GB까지 사용가능한 것을 �
 
 
 node --max-old-space-size=8192 memory_test.js 로 실행하면 다음과 같은 화면이 나타난다.
-![WOWS1](./images/memory increase nodejs.png)
-
+![](images/memory increase nodejs.png)
 기본적으로 실행했을 때와 달리 total heap size가 8GB로 증가 했음을 알 수 있다.
 
 실제 보유하고 있는 물리적 메모리의 크기에 따라 메모리 제한을 정할 수 있다.
