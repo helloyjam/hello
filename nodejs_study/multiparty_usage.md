@@ -12,9 +12,9 @@ file_dict = {'transfer_file' : open('number_list.txt', 'rb')}
 r = requests.post('http://127.0.0.1:8250/data', files=file_dict)
 
 print(r.status_code)
-</code></pre>
-
 ```
+
+```js
 // node_test.js
 
 router.post('/data', function(req, res, next)
@@ -22,9 +22,9 @@ router.post('/data', function(req, res, next)
     console.log(req.headers,"HEADERS...")
     res.send("complete...")
 }
-</code></pre>
+```
 
-<pre><code>
+```js
 // number_list.txt
 1
 2
@@ -36,7 +36,7 @@ router.post('/data', function(req, res, next)
 8
 9
 10
-</code></pre>
+```js
 
 python request_test.py 를 입력하면 다음과 같은 결과가 node_test.js에 나타난다.
 
@@ -46,7 +46,7 @@ python request_test.py 를 입력하면 다음과 같은 결과가 node_test.js�
 커맨드라인에 
 npm install multiparty을 입력해서 패키지를 설치한다.
 
-<pre><code>
+```js
 let multiparty = require('multiparty');
 
 router.post('/data', function(req, res, next)
@@ -75,7 +75,7 @@ router.post('/data', function(req, res, next)
     form.parse(req)
     res.send("complete...")
 }
-</code></pre>
+```
 
 다시 request_test.py를 실행해보자.
 
