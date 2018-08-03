@@ -24,6 +24,7 @@ router.post('/data', function(req, res, next)
 }
 </code></pre>
 
+<pre><code>
 // number_list.txt
 1
 2
@@ -35,6 +36,7 @@ router.post('/data', function(req, res, next)
 8
 9
 10
+</code></pre>
 
 python request_test.py 를 입력하면 다음과 같은 결과가 node_test.js에 나타난다.
 
