@@ -1,9 +1,9 @@
-
+eeeee
 # nodejs에서 multipart/form-data parsing하기
 
 node.js 서버로 post request를 보냈다고 가정하자.
 파이썬 코드와 자바스크립트 코드는 다음과 같다.
-<pre><code>
+'''js
 // request_test.py
 import requests
 
@@ -14,7 +14,7 @@ r = requests.post('http://127.0.0.1:8250/data', files=file_dict)
 print(r.status_code)
 </code></pre>
 
-<pre><code>
+'''
 // node_test.js
 
 router.post('/data', function(req, res, next)
