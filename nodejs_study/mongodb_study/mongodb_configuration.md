@@ -2,7 +2,7 @@
 
 mongodb에서 mongodb.conf 파일을 작성할 때 자주 쓰는 옵션은 다음과 같다.
 
-
+'''
 fork=<boolean>  // default=False
 mongos(MongoDB Shard) 또는 mongod(MongoDB system)를 daemon 모드로 돌릴 수 있도록 가능하게 해주는 옵션이다.
 기본적으로, mongos 또는 mongod는 daemon으로 돌리지 않게 되어 있다.
@@ -36,7 +36,7 @@ true 값이면 mongodb는 각 데이터베이스에 데이터를 저장하기 �
 데이터베이스 네임이 dbman 이면 서브디렉터리 네임도 dbman이다.
 
 port=<integer>
-
+'''
 additional...
 
 verbose=<boolean>
