@@ -1,0 +1,17 @@
+# mongodb restore 명령어
+
+-d <백업할 DB 이름>
+-o <백업 BSON 파일 저장 경로>
+--host <백업할 MongoDB가 설치된 IP주소:PORT번호>
+
+sudo ./bin/mongodump --host <host_address:port> -d <db_name> -o <save_path>
+
+복구 전에 존재하는 컬렉션을 없애고 싶다면 --drop 옵션을 사용합니다.
+
+sudo ./bin/mongorestore --db <db_name> --drop <dump_path> --host <host_address:port>
+
+
+can check what port your instance is using by running:
+
+netstat -plunt | grep mongo
+
